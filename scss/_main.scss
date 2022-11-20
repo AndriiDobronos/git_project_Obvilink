@@ -1,0 +1,37 @@
+body {
+  font-family: "Source Sans Pro",sans-serif ;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--main-color);
+  @media screen and (min-width: 860px) {
+    background: var(--accent-color);
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.center {
+  padding-left: calc(50vw - 125px);
+  padding-right: calc(50vw - 125px);
+  @media screen and (min-width: 400px) {
+    padding-left: calc(50vw - 190px);
+    padding-right: calc(50vw - 190px);
+  }
+  @media screen and (min-width: 760px) {
+    padding-left: calc(50vw - 360px);
+    padding-right: calc(50vw - 360px);
+  }
+  @media screen and (min-width: 860px) {
+    padding-left: calc(50vw - 420px);
+    padding-right: calc(50vw - 420px);
+  }
+}
+.content {
+  @media screen and (min-width: 860px) {
+    background: #fff;
+    border-radius:30px ;
+    padding: 60px;
+  }
+}
