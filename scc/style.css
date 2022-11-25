@@ -204,17 +204,6 @@ img {
   }
 }
 
-.messengers.services__icon {
-  display: none;
-}
-@media screen and (min-width: 760px) {
-  .messengers.services__icon {
-    display: block;
-    width: 43px;
-    height: 51px;
-  }
-}
-
 .services {
   display: flex;
   flex-direction: column;
@@ -230,6 +219,16 @@ img {
     margin-right: 20px;
     margin-left: auto;
     max-width: 350px;
+  }
+}
+.services__icon {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .services__icon {
+    display: block;
+    width: 43px;
+    height: 51px;
   }
 }
 .services__title {
@@ -278,9 +277,19 @@ img {
 @media screen and (min-width: 760px) {
   .services-revers__container {
     margin-top: 225px;
-    margin-left: 0;
+    margin-left: 0px;
     margin-right: auto;
     max-width: 350px;
+  }
+}
+.services-revers__icon {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  .services-revers__icon {
+    display: block;
+    width: 47px;
+    height: 58px;
   }
 }
 .services-revers__title {
@@ -314,17 +323,6 @@ img {
 }
 @media screen and (min-width: 760px) {
   .service.services-revers__icon {
-    display: block;
-    width: 52px;
-    height: 63px;
-  }
-}
-
-.text-block.services__icon {
-  display: none;
-}
-@media screen and (min-width: 760px) {
-  .text-block.services__icon {
     display: block;
     width: 52px;
     height: 63px;
@@ -375,11 +373,15 @@ img {
   }
 }
 
-.video.services-revers__icon {
+.video {
+  background: red;
+}
+
+.services-revers__icon {
   display: none;
 }
 @media screen and (min-width: 760px) {
-  .video.services-revers__icon {
+  .services-revers__icon {
     display: block;
     width: 65px;
     height: 45px;
@@ -389,38 +391,20 @@ img {
 .prices {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: -50%;
+  background: red;
 }
 .prices__img {
   display: block;
   width: 65px;
   height: 71px;
 }
-@media screen and (min-width: 760px) {
-  .prices__title {
-    font-size: 30px;
-    line-height: 42px;
-    font-weight: 700;
-  }
-}
 .prices__button-select {
   display: flex;
   flex-direction: row;
   height: 40px;
-  max-width: 390px;
+  width: 390px;
   border: 1px solid #b4b4b4;
-  margin-left: -50px;
-  margin-right: -50px;
-}
-
-.first-button, .second-button, .third-button {
-  text-align: center;
-  border: 1px solid #b4b4b4;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

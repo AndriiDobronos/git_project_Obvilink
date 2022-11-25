@@ -1,0 +1,10 @@
+.reviews.services  {
+  &__icon {
+    display: none;
+    @media screen and (min-width: 760px) {
+      display: block;
+      width: 58px;
+      height: 56px;
+    }
+  }
+}

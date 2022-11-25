@@ -1,0 +1,10 @@
+.map.services-revers  {
+  &__icon {
+    display: none;
+    @media screen and (min-width: 760px) {
+      display: block;
+      width: 74px;
+      height: 55px;
+    }
+  }
+}

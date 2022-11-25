@@ -1,0 +1,36 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    display: block;
+    width: 65px;
+    height: 71px;
+  }
+    &__title {
+
+      @media screen and (min-width: 760px) {
+        font-size: 30px;
+        line-height: 42px;
+        font-weight: 700;
+      }
+    }
+     &__button-select {
+       display: flex;
+       flex-direction: row;
+       height: 40px;
+       max-width: 390px;
+       border: 1px solid #b4b4b4;
+       margin-left: -50px;
+       margin-right: -50px;
+     }
+}
+.first-button, .second-button, .third-button {
+  text-align: center ;
+  border: 1px solid #b4b4b4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
