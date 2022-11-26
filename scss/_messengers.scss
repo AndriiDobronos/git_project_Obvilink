@@ -16,7 +16,9 @@
   }
   &__container {
     @media screen and (min-width: 760px) {
-       margin-top: 225px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       margin-right: 20px;
       margin-left: auto;
       max-width: 350px;
@@ -26,10 +28,14 @@
     font-size: 18px;
     line-height: 30px;
      margin-top: 83px;
+    @media screen and (min-width: 760px) {
+      margin-top: 26px;
+    }
     @media screen and (min-width: 860px) {
       font-size: 30px;
       line-height: 42px;
       font-weight: 700;
+      margin-top: 20px;
       margin-bottom: 0;
     }
   }
