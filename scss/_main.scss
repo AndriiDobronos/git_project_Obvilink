@@ -43,7 +43,20 @@ img {
 .content {
   @media screen and (min-width: 860px) {
     background: #fff;
-    border-radius: 30px;
-    padding:60px 60px 0 60px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 60px;
+  }
+}
+section:nth-child(even) {
+  @media screen and (min-width: 860px) {
+    padding-left: 8px;
+    padding-right: 60px;
+  }
+}
+section:nth-child(odd) {
+  @media screen and (min-width: 860px) {
+    padding-right:60px;
+    padding-left: 60px;
   }
 }
