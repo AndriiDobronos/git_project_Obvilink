@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
     <title>Obvilink</title>
@@ -16,12 +17,19 @@
 <body>
 <header class="header center" >
   <a class="logo" href="#">
-    <img src="img/logo.png" alt="obvi-link">
+    <picture class ="">
+      <source srcset="img/logo.svg"  media="(max-width:760px)">
+      <img src="img/logo.png" alt="obvi-link">
+    </picture>
   </a>
   <nav class="nav">
-    <button class ="nav__toggle">
-      <img class="" src="img/burger_icon.png" alt="burger icon">
-    </button>
+    <input type ="checkbox" id="nav__toggle" class="nav__checker">
+    <label class ="nav__toggle" for="nav__toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+<!--   <img class="" src="img/burger_icon.png" alt="burger icon">  -->
+    </label>
     <ul class="nav__list">
       <li><a href="#" class="nav__link"></a>Тарифы</li>
       <li><a href="#" class="nav__link"></a>FAQ</li>
@@ -29,11 +37,14 @@
     </ul>
   </nav>
 </header>
+<!--
+<span class="circle"></span>
+-->
 <main class="center">
   <div class="content">
     <section class ="offer">
       <article class="offer__text">
-        <h1 class="offer__title">
+        <h1 class="offer__title animate__animated animate__bounce animate__flash">
           Связь с клиентом в один клик!
         </h1>
         <p class="offer__desc">
@@ -43,8 +54,32 @@
           Создать страницу бесплатно
         </button>
       </article>
-      <div class="offer__img phone">
-        <img src="img/phone_1.png" alt="Добавьте любимые мессенджеры ваших клиентов, и они смогут связаться с вами в один клик!">
+      <div class="offer__img">
+        <div class="phone slider">
+          <input type="radio" checked name="slider__checker" class="slider__checker" value="1" id="slider__checker-1">
+          <input type="radio" name="slider__checker" class="slider__checker" value="2" id="slider__checker-2">
+          <input type="radio" name="slider__checker" class="slider__checker" value="3" id="slider__checker-3">
+          <input type="radio" name="slider__checker" class="slider__checker" value="4" id="slider__checker-4">
+          <input type="radio" name="slider__checker" class="slider__checker" value="5" id="slider__checker-5">
+          <div class="slider__list">
+            <img class="slider__item"  src="img/phone_1.png" alt="Связь с клиентом в один клик!">
+            <img class="slider__item"  src="img/phone_2.png" alt="Связь с клиентом в один клик!">
+            <img class="slider__item"  src="img/phone_3.png" alt="Связь с клиентом в один клик!">
+            <img class="slider__item"  src="img/phone_4.png" alt="Связь с клиентом в один клик!">
+            <img class="slider__item"  src="img/phone_5.png" alt="Связь с клиентом в один клик!">
+          </div>
+ <!--       <picture class ="">
+          <source srcset="img/phone_1.png" media="(min-width:860px)" >
+          <img src="img/phone_1.png" alt="Добавьте любимые мессенджеры ваших клиентов, и они смогут связаться с вами в один клик!">
+        </picture>    -->
+        <div class="slider__dots">
+          <label for="slider__checker-1">1</label>
+          <label for="slider__checker-2">2</label>
+          <label for="slider__checker-3">3</label>
+          <label for="slider__checker-4">4</label>
+          <label for="slider__checker-5">5</label>
+        </div>
+        </div>
       </div>
     </section>
 
